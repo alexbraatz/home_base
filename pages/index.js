@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
-import ustilStyles from '../styles/utils.module.css'
+// import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
+import Navbar from '../components/Navbar';
 
 import { getSortedPostsData } from '../lib/posts'
 
@@ -24,15 +25,15 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={ustilStyles.headingMd}>
+      {/* <section className={ustilStyles.headingMd}> */}
         <p>[Hello World]</p>
         <p>
           (My first personal website - more to learn at{' '}
           <a href="https://nextjs.org/learn">Tutorial</a>.)
         </p>
-      </section>
+      {/* </section> */}
 
-      <section className={`${ustilStyles.headingMd} ${ustilStyles.padding1px}`}>
+      {/* <section className={`${ustilStyles.headingMd} ${ustilStyles.padding1px}`}>
         <h2 className={ustilStyles.headingLg}>Blog</h2>
         <ul className={ustilStyles.list}>
           {allPostsData.map(({id, date, title}) => (
@@ -45,11 +46,11 @@ export default function Home({ allPostsData }) {
                 <Date dateString={date} />
               </small>
               <br />
-            </li>
-          ))}
-        </ul>
+            </li> */}
+          {/* ))} */}
+        {/* </ul> */}
 
-      </section>
+      {/* </section> */}
       <Link href="posts/first-post">
         <a>this page here!</a>
       </Link>
