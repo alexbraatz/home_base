@@ -50,7 +50,7 @@ export default function Home({ allPostsData }) {
         </ul>
 
       </section>
-      <Link href="posts/first-post">
+      <Link href="/posts/first-post">
         <a>this page here!</a>
       </Link>
     </Layout>
