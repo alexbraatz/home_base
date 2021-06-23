@@ -25,6 +25,8 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <section className={ustilStyles.headingMd}>
+        <p>[Hello World, Im trying!]</p>
       {/* <section className={ustilStyles.headingMd}> */}
         <p>[Hello World]</p>
         <p>
