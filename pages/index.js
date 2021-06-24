@@ -4,6 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
 
+
 import { getSortedPostsData } from '../lib/posts'
 
 // add an import for 'getSortedPostsData' and call it here
@@ -20,12 +21,23 @@ export async function getStaticProps() {
 // the blog posts will be passed to the 'Home' component as a prop like so
 export default function Home({ allPostsData }) {
   return (
+    <body className="bg-gray-900 text-white">
+     
     <Layout home>
-      <Head>
+      
+      <Head> 
         <title>{siteTitle}</title>
       </Head>
+
+      <div className="container">
+
+      <button className="bg-blue-500 text-white hover:bg-blue-400 font-bold py-2 px-4 rounded">Hello</button>
+
+
+      </div>
+      
       <section className={ustilStyles.headingMd}>
-        <p>[Hello World]</p>
+        <p className="text-white">[Hello World]</p>
         <p>
           (My first personal website - more to learn at{' '}
           <a href="https://nextjs.org/learn">Tutorial</a>.)
@@ -53,6 +65,9 @@ export default function Home({ allPostsData }) {
       <Link href="/posts/first-post">
         <a>this page here!</a>
       </Link>
+
     </Layout>
+    </body>
+  
   )
 }

@@ -9,8 +9,8 @@ export const siteTitle = "Alex's Home Site"
 
 export default function Layout({children, home}) {
 	return(
-		<div className={styles.container}>
-			<Head>
+		<div>
+			{/* <Head>
 				<link rel="icon" href="/favicon.ico" />
 				<meta
 					name="description"
@@ -22,19 +22,18 @@ export default function Layout({children, home}) {
 				/>
 				<meta name="og:title" content={siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
-			</Head>
-			<header className={styles.header}>
+			</Head> */}
+			<header>
 				{ home ? (
 					<>
 					<Image
 						priority
 						src="/images/profile.jpg"
-						className={utilStyles.borderCircle}
 						height={400}
 						width={600}
 						alt={name}
 					/>
-					<h1 className={utilStyles.heading2Xl}>{name}</h1>
+					<h1 className="text-white">{name}</h1>
 					</>
 				) : (
 					<>
@@ -43,16 +42,15 @@ export default function Layout({children, home}) {
 							<Image
 								priority
 								src="/images/profile.jpg"
-								className={utilStyles.borderCirlce}
 								height={108}
 								width={108}
 								alt={name}
 							/>
 						</a>
 					</Link>
-					<h2 className={utilStyles.headingLg}>
+					<h2>
 						<Link href="/">
-							<a className={utilStyles.colorInherit}>{name}</a>
+							<a>{name}</a>
 						</Link>
 					</h2>
 					</>
