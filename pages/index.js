@@ -21,7 +21,6 @@ export async function getStaticProps() {
 // the blog posts will be passed to the 'Home' component as a prop like so
 export default function Home({ allPostsData }) {
   return (
-    <body className="bg-gray-900 text-white">
      
     <Layout home>
       
@@ -67,7 +66,7 @@ export default function Home({ allPostsData }) {
       </Link>
 
     </Layout>
-    </body>
+
   
   )
 }
