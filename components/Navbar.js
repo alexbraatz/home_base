@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import Logo from '../public/images/myLogo.svg'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export const Navbar = () => {
 
-  const [active, setActive] = useState(false);
+  // const [active, setActive] = useState(false);
 
-  const handleClick = () => {
-    setActive(!active);
-  };
+  // const handleClick = () => {
+  //   setActive(!active);
+  // };
 
   return (
     <>
@@ -34,7 +34,7 @@ export const Navbar = () => {
         
         <button 
           className='inline-flex p-3 hover:bg-red-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
-          onClick={handleClick}
+          // onClick={handleClick}
         >
           <svg
             className='w-6 h-6'
@@ -53,8 +53,9 @@ export const Navbar = () => {
         </button>
         
         {/* Creates inline menu options to display */}
+        {/* ${ active ? '' : 'hidden'}  */}
         
-        <div className={`${ active ? '' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
+        <div className={`w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
           {/* Use ternary operator in div to decide to or not to display content of the div*/}
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
