@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { Navbar } from '../components/Navbar.js'
+import { Body } from '../components/Body.js'
 import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
@@ -32,6 +33,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <Body />
       <div>Hello World</div>
 
       <div className="container">
