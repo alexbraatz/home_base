@@ -7,7 +7,9 @@ export const Navbar = () => {
 	const [active, setActive] = useState(false);
 
 	const handleClick = () => {
+		console.log('in handleClick', active)
 		setActive(!active);
+		console.log('after click active:', active )
 	};
 
 	return (
@@ -56,10 +58,10 @@ export const Navbar = () => {
 
 				{/* Creates inline menu options to display */}
 
-        <div className={`${ active ? '' : 'hidden'} hidden w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
+        <div className={`${ active ? '' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
 					{/* Use ternary operator in div to decide to or not to display content of the div*/}
 
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+					<div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
                 is
