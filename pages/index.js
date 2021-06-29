@@ -19,10 +19,12 @@ export async function getStaticProps() {
 
 // by returning 'allPostsData' inside the 'props' object in 'getStaticProps'
 // the blog posts will be passed to the 'Home' component as a prop like so
-export default function Home({ allPostsData }) {
+// export default function Home({ allPostsData })
+// instead of using layout, will use tailwind instead
+export default function Home() {
   return (
      
-    <Layout home>
+    <div className="flex flex-col"> 
       
       <Head> 
         <title>{siteTitle}</title>
@@ -35,7 +37,7 @@ export default function Home({ allPostsData }) {
 
       </div>
       
-      <section className={ustilStyles.headingMd}>
+      <section >
         <p className="text-white">[Hello World]</p>
         <p>
           (My first personal website - more to learn at{' '}
@@ -43,29 +45,11 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
 
-      <section className={`${ustilStyles.headingMd} ${ustilStyles.padding1px}`}>
-        <h2 className={ustilStyles.headingLg}>Blog</h2>
-        <ul className={ustilStyles.list}>
-          {allPostsData.map(({id, date, title}) => (
-            <li className={ustilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-                </Link>
-              <br />
-              <small className={ustilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-              <br />
-            </li>
-          ))}
-        </ul>
-
-      </section>
       <Link href="/posts/first-post">
         <a>this page here!</a>
       </Link>
 
-    </Layout>
+      </div>
 
   
   )

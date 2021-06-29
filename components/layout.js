@@ -9,8 +9,10 @@ export const siteTitle = "Alex's Home Site"
 
 export default function Layout({children, home}) {
 	return(
+
 		<div>
-			{/* <Head>
+			
+			<Head>
 				<link rel="icon" href="/favicon.ico" />
 				<meta
 					name="description"
@@ -22,7 +24,8 @@ export default function Layout({children, home}) {
 				/>
 				<meta name="og:title" content={siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
-			</Head> */}
+			</Head>
+			
 			<header>
 				{ home ? (
 					<>
@@ -64,6 +67,8 @@ export default function Layout({children, home}) {
 					</Link>
 				</div>
 			)}
+			
 		</div>
+		
 	)
 }
