@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { Navbar } from '../components/Navbar'
+import { Navbar } from '../components/Navbar.js'
 import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
