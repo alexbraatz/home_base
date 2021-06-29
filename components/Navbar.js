@@ -8,7 +8,6 @@ export const Navbar = () => {
 
   const handleClick = () => {
     setActive(!active);
-    console.log('after click active:', active )
   };
 
   return (
