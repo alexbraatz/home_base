@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { Navbar } from '../components/Navbar'
 import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
@@ -29,6 +30,9 @@ export default function Home() {
       <Head> 
         <title>{siteTitle}</title>
       </Head>
+
+      <Navbar />
+      <div>Hello World</div>
 
       <div className="container">
 
