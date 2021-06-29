@@ -1,7 +1,7 @@
-// to use an svg file:
+// to use an svg file in next.js:
 // 1. npm install @svgr/webpack --save-dev
-// 2. create an next.config.js file for advanced next.js customization
-// 3. add the below
+// 2. create an next.config.js file in root for advanced next.js customization
+// 3. add the webpack config below
 
 module.exports = {
   webpack(config) {
