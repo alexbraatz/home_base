@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import * as React from 'react'
+import { useState } from 'react'
 import { Navbar } from '../components/Navbar.js'
 import { Body } from '../components/Body.js'
+import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
@@ -11,6 +14,7 @@ import { getSortedPostsData } from '../lib/posts'
 
 // add an import for 'getSortedPostsData' and call it here
 export async function getStaticProps() {
+
   const allPostsData = getSortedPostsData()
   return {
     props: {
@@ -19,11 +23,10 @@ export async function getStaticProps() {
   }
 }
 
-// by returning 'allPostsData' inside the 'props' object in 'getStaticProps'
-// the blog posts will be passed to the 'Home' component as a prop like so
-// export default function Home({ allPostsData })
-// instead of using layout, will use tailwind instead
 export default function Home() {
+
+  const [count, setCount] = useState(0);
+  
   return (
      
     <div className="flex flex-col"> 
