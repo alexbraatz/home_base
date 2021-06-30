@@ -30,3 +30,5 @@ yarn-error.log*
 .env.production.local
 
 .vercel
+
+alexToken = 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
