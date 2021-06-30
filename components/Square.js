@@ -1,15 +1,14 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-export const Body = () => {
+export const Square = () => {
 
   return (
     <>
       <motion.div 
         animate={{ scale: 2}}
-        transtion={{ duration: 0.5}}
       />
 
-      <p>Animate!</p>
+      {/* <p>Animate!</p> */}
 
     </>
   )

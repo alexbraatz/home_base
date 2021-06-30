@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Navbar } from '../components/Navbar.js'
-import { Body } from '../components/Square.js'
+import { Square } from '../components/Square.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
@@ -27,43 +27,52 @@ export default function Home() {
   const [count, setCount] = useState(0);
 
   return (
-     
-    <div className="flex flex-col"> 
+    <>
+    {/* <div className="flex flex-col">  */}
       
       <Head> 
         <title>{siteTitle}</title>
       </Head>
 
+      <div>
       <Navbar />
-
-      <Refresh onClick={() => setCount(count + 1)} />
-      <div className="example-container">
-        <Body key={count} />
       </div>
 
-      <div>Hello World</div>
+      <body>
+      <Refresh onClick={() => setCount(count + 1)} />
+      <div className="bg-red-600 h-auto w-auto rounded-full">
+        <Square key={count} />
+      </div>
 
-      <div className="container">
+      <div className="example-container">
+        <Square key={count} />
+      </div>
+
+
+      {/* <div>Hello World</div> */}
+
+      {/* <div className="container">
 
       <button className="bg-blue-500 text-white hover:bg-blue-400 font-bold py-2 px-4 rounded">Hello</button>
 
 
-      </div>
+      </div> */}
       
-      <section >
+      {/* <section >
         <p className="text-white">[Hello World]</p>
         <p>
           (My first personal website - more to learn at{' '}
           <a href="https://nextjs.org/learn">Tutorial</a>.)
         </p>
-      </section>
+      </section> */}
 
-      <Link href="/posts/first-post">
+      {/* <Link href="/posts/first-post">
         <a>this page here!</a>
-      </Link>
+      </Link> */}
 
-      </div>
-
+    {/* </div> */}
+    </body>
+    </>
   
   )
 }
