@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.main {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, #ff008c 0%, rgb(211, 9, 225) 100%);

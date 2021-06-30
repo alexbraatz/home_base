@@ -27,26 +27,25 @@ export default function Home() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-    {/* <div className="flex flex-col">  */}
-      
-      <Head> 
+    <div className="h-screen bg-gradient-to-r from-pink-600 to-purple-500">
+     <Head> 
         <title>{siteTitle}</title>
       </Head>
 
-      <div>
       <Navbar />
-      </div>
 
-      <body>
-      <Refresh onClick={() => setCount(count + 1)} />
-      <div className="bg-red-600 h-auto w-auto rounded-full">
-        <Square key={count} />
-      </div>
+      
+      {/* <div className="flex flex-col">  */}
+      
+    
+        <Refresh onClick={() => setCount(count + 1)} />
+        {/* <div className="bg-red-600 h-auto w-auto rounded-full">
+          <Square key={count} />
+        </div> */}
 
-      <div className="example-container">
-        <Square key={count} />
-      </div>
+        {/* <div className="example-container">
+          <Square key={count} />
+        </div> */}
 
 
       {/* <div>Hello World</div> */}
@@ -71,8 +70,7 @@ export default function Home() {
       </Link> */}
 
     {/* </div> */}
-    </body>
-    </>
+    </div>
   
   )
 }

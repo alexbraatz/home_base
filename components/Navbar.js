@@ -11,7 +11,7 @@ export const Navbar = () => {
   };
 
   return (
-    <>
+    <div>
       {/* Creates the logo w/name */}
       
       <nav className='flex items-center flex-wrap bg-red-400 p-3 '>
@@ -53,8 +53,7 @@ export const Navbar = () => {
         </button>
         
         {/* Creates inline menu options to display */}
-        
-        
+          
         <div className={`${ active ? '' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
           {/* Use ternary operator in div to decide to or not to display content of the div*/}
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
@@ -82,7 +81,7 @@ export const Navbar = () => {
         </div>
         
       </nav>	
-    </>
+    </div>
   )
 }
 
