@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import * as React from 'react'
 import { useState } from 'react'
 import { Navbar } from '../components/Navbar.js'
-import { Body } from '../components/Body.js'
+import { Body } from '../components/Square.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
@@ -26,7 +25,7 @@ export async function getStaticProps() {
 export default function Home() {
 
   const [count, setCount] = useState(0);
-  
+
   return (
      
     <div className="flex flex-col"> 
@@ -36,7 +35,12 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <Body />
+
+      <Refresh onClick={() => setCount(count + 1)} />
+      <div className="example-container">
+        <Body key={count} />
+      </div>
+
       <div>Hello World</div>
 
       <div className="container">
