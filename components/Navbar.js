@@ -14,7 +14,7 @@ export const Navbar = () => {
     <div>
       {/* Creates the logo w/name */}
       
-      <nav className='flex items-center flex-wrap bg-red-400 p-3 '>
+      <nav className='flex items-center flex-wrap bg-gradient-to-r from-pink-600 to-purple-500 p-3 '>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <svg
