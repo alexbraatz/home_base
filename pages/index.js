@@ -34,9 +34,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-
-      <Refresh onClick={() => setCount(count +1)} />
-      <Base key={count}/>
+      <Base />
 
       {/* <div className="flex flex-col">  */}
       

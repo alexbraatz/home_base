@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Logo from '../public/images/myLogo.svg'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 export const Navbar = () => {
 
@@ -15,6 +16,7 @@ export const Navbar = () => {
       {/* Creates the logo w/name */}
       
       <nav className='flex items-center flex-wrap bg-gradient-to-r from-pink-600 to-purple-500 p-3 '>
+      <motion.div animate={{scale: 1.2}} transition={{duration: 1}}>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
             <svg
@@ -29,6 +31,7 @@ export const Navbar = () => {
             </span>			
           </a>
         </Link>
+        </motion.div>
         
         {/* Creates hamburger menu */}
         
@@ -53,10 +56,13 @@ export const Navbar = () => {
         </button>
         
         {/* Creates inline menu options to display */}
-          
+        
+        
         <div className={`${ active ? '' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
           {/* Use ternary operator in div to decide to or not to display content of the div*/}
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+          
+          <div className='pr-5 lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+          <motion.div animate={{scale: 1.3}} transition={{duration: 1}}>
             <Link href='/'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
                 is
@@ -77,8 +83,10 @@ export const Navbar = () => {
                 contact me
               </a>
             </Link>
+            </motion.div>
           </div>
         </div>
+        
         
       </nav>	
     </div>
