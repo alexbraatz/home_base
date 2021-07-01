@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Navbar } from '../components/Navbar.js'
+import { Base } from '../components/Base.js'
 import { Square } from '../components/Square.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
@@ -33,17 +34,18 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <Base />
 
       {/* <div className="flex flex-col">  */}
       
-        <Refresh onClick={() => setCount(count + 1)} />
-        {/* <div className="bg-red-600 h-auto w-auto rounded-full">
+        {/* <Refresh onClick={() => setCount(count + 1)} />
+        <div className="rounded-full h-auto w-auto bg-red-600">
           <Square key={count} />
         </div> */}
 
-        <div className="example-container">
+        {/* <div className="example-container">
           <Square key={count} />
-        </div>
+        </div> */}
 
 
       {/* <div>Hello World</div> */}
