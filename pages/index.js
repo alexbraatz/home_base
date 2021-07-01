@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Navbar } from '../components/Navbar.js'
 import { Base } from '../components/Base.js'
-import { Is } from '../components/Is.js'
+import { Who } from '../components/Who.js'
 import { Example } from '../components/Example.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
@@ -31,14 +31,14 @@ export default function Home() {
   const [count, setCount] = useState(0);
 
   return ( 
-    <main className="h-screen w-full bg-gradient-to-r from-pink-600 to-purple-500">
+    <main className="max-h-screen w-full bg-gradient-to-r from-pink-600 to-purple-500">
      <Head> 
         <title>{siteTitle}</title>
       </Head>
 
       <Navbar />
       <Base />
-      <Is />
+      <Who />
 
       {/* <div className="flex flex-col">  */}
       
