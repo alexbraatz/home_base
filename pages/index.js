@@ -36,9 +36,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
 
-      <section>
-        <Navbar />
-      </section>
+      <Navbar />
       <Base />
       <Is />
 

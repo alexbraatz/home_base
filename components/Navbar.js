@@ -83,7 +83,7 @@ export const Navbar = () => {
             </motion.div>
           </div>
         </div>
-      </nav>	
+      </nav>
   )
 }
 
