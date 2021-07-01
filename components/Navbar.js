@@ -12,25 +12,23 @@ export const Navbar = () => {
   };
 
   return (
-    <div>
-      {/* Creates the logo w/name */}
-      
+      /* Creates the logo w/name */ 
       <nav className='flex items-center flex-wrap bg-gradient-to-r from-pink-600 to-purple-500 p-3 '>
-      <motion.div animate={{scale: 1.2}} transition={{duration: 1}}>
-        <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 '>
-            <svg
-              viewBox='0 0 24 24'
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-12 w-12 mr-0'
-            >
-              <Logo />
-            </svg>
-            <span className='text-xl text-white font-bold lowercase tracking-wide'>
-              Alexx Braatz
-            </span>			
-          </a>
-        </Link>
+        <motion.div animate={{scale: 1.2}} transition={{duration: 1}}>
+          <Link href='/'>
+            <a className='inline-flex items-center p-2 mr-4 '>
+              <svg
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-12 w-12 mr-0'
+              >
+                <Logo />
+              </svg>
+              <span className='text-xl text-white font-bold lowercase tracking-wide'>
+                Alexx Braatz
+              </span>			
+            </a>
+          </Link>
         </motion.div>
         
         {/* Creates hamburger menu */}
@@ -56,7 +54,6 @@ export const Navbar = () => {
         </button>
         
         {/* Creates inline menu options to display */}
-        
         
         <div className={`${ active ? '' : 'hidden'} pl-8 w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
           {/* Use ternary operator in div to decide to or not to display content of the div*/}
@@ -86,10 +83,7 @@ export const Navbar = () => {
             </motion.div>
           </div>
         </div>
-        
-        
       </nav>	
-    </div>
   )
 }
 

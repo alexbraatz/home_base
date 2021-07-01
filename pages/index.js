@@ -31,12 +31,14 @@ export default function Home() {
   const [count, setCount] = useState(0);
 
   return ( 
-    <section className="h-screen w-full bg-gradient-to-r from-pink-600 to-purple-500">
+    <main className="h-screen w-full bg-gradient-to-r from-pink-600 to-purple-500">
      <Head> 
         <title>{siteTitle}</title>
       </Head>
 
-      <Navbar />
+      <section>
+        <Navbar />
+      </section>
       <Base />
       <Is />
 
@@ -73,8 +75,8 @@ export default function Home() {
         <a>this page here!</a>
       </Link> */}
 
-    {/* </div> */}
-    </section>
+      {/* </div> */}
+    </main>
   
   )
 }
