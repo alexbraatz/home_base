@@ -36,15 +36,14 @@ export default function Home() {
 
       {/* <div className="flex flex-col">  */}
       
-    
         <Refresh onClick={() => setCount(count + 1)} />
         {/* <div className="bg-red-600 h-auto w-auto rounded-full">
           <Square key={count} />
         </div> */}
 
-        {/* <div className="example-container">
+        <div className="example-container">
           <Square key={count} />
-        </div> */}
+        </div>
 
 
       {/* <div>Hello World</div> */}
