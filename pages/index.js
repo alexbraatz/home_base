@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Navbar } from '../components/Navbar.js'
 import { Base } from '../components/Base.js'
-import { Square } from '../components/Square.js'
+import { Example } from '../components/Example.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
@@ -34,7 +34,9 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <Base />
+
+      <Refresh onClick={() => setCount(count +1)} />
+      <Base key={count}/>
 
       {/* <div className="flex flex-col">  */}
       
