@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Navbar } from '../components/Navbar.js'
 import { Base } from '../components/Base.js'
+import { Is } from '../components/Is.js'
 import { Example } from '../components/Example.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
@@ -37,6 +38,7 @@ export default function Home() {
 
       <Navbar />
       <Base />
+      <Is />
 
       {/* <div className="flex flex-col">  */}
       
