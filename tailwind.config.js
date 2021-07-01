@@ -1,12 +1,8 @@
 module.exports = {
-  purge: ['./pages/index.js', './pages/posts/[id].js', './pages/posts/first-post.js',
-          './componets/layout.js'],
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    container: {
-      center: true,
-      padding: '2rem'
-    },
     extend: {},
   },
   variants: {
