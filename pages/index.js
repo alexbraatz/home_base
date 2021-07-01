@@ -9,6 +9,8 @@ import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
 
+import { Frame, Scroll } from 'framer-motion'
+
 
 import { getSortedPostsData } from '../lib/posts'
 
@@ -27,8 +29,8 @@ export default function Home() {
 
   const [count, setCount] = useState(0);
 
-  return (
-    <div className="h-screen bg-gradient-to-r from-pink-600 to-purple-500">
+  return ( 
+    <section className="h-screen w-full bg-gradient-to-r from-pink-600 to-purple-500">
      <Head> 
         <title>{siteTitle}</title>
       </Head>
@@ -70,7 +72,7 @@ export default function Home() {
       </Link> */}
 
     {/* </div> */}
-    </div>
+    </section>
   
   )
 }

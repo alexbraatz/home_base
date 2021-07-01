@@ -27,7 +27,7 @@ export const Base = () => {
       }}
       whileHover={{ scale: 1.05 }}
     >
-      <h1 className="pl-7 font-sans font-extrabold text-9xl ubpixel-antialiased text-black"> hi, i'm alex, full stack developer</h1>
+      <h1 className="pl-7 font-sans font-extrabold text-6xl lg:text-9xl ubpixel-antialiased text-black"> hi, i'm alex, full stack developer</h1>
       </motion.div>
 
     </div>

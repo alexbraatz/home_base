@@ -58,7 +58,7 @@ export const Navbar = () => {
         {/* Creates inline menu options to display */}
         
         
-        <div className={`${ active ? '' : 'hidden'} w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
+        <div className={`${ active ? '' : 'hidden'} pl-8 w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
           {/* Use ternary operator in div to decide to or not to display content of the div*/}
           
           <div className='pr-5 lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
