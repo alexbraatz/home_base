@@ -9,6 +9,7 @@ export const Who = () => {
         </div>
         <div className="col-span-2 ..."><p>Also a really cool human</p></div>
         <div className="row-span-2 col-span-2 ..."><p>Hello, I like coding 'n stuff</p></div>
+        <div className="col-span-2"><p>Passionate about building web apps to change the lives of humans across the globe</p></div>
       </div>
       {/* <span className="pl-7 font-sans font-extrabold text-6xl md:text-9xl ubpixel-antialiased text-black">
         me,<br></br>
