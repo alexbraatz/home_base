@@ -10,6 +10,7 @@ import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
 
+import { Anchor } from 'nextjs-anchor'
 import { Frame, Scroll } from 'framer-motion'
 
 
@@ -25,6 +26,7 @@ export async function getStaticProps() {
     }
   }
 }
+
 
 export default function Home() {
 
