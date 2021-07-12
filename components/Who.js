@@ -24,7 +24,7 @@ export const Who = () => {
       </div>
 
       <div>
-        <p className="pl-2">i currently reside in minneapolis, minnesota with my girlfriend samantha, 
+        <p className="pl-2">i currently reside in minneapolis, minnesota with my fiancé samantha, 
           husky puppy zelda, our bengal-mix kitty nooriya, and gray tabby-cat nala. in my free time i like spending time outside with
           our dog, going on hikes (huge fan of yellowstone), video games, anime, netflix and of course, coding
         </p>

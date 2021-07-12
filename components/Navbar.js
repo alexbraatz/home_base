@@ -60,7 +60,7 @@ export const Navbar = () => {
           
           <div className='pr-5 lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
           <motion.div animate={{scale: 1.3}} transition={{duration: 1}}>
-            <Link href='/'>
+            <Link href='#work'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                 work
               </a>
