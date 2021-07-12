@@ -8,7 +8,7 @@ export const Who = () => {
           <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">me, myself, and i</h2>
         </div>
         <div className="pr-2 col-span-2">
-          <p>i'm alex braatz, your friendly neighborhood developer. from my first 'hello world' in python in 2020, 
+          <p>i'm alex braatz, your friendly neighborhood developer. from my first 'hello world' in python in spring of 2020, 
              it was like being struck by lightning. my passion has always been to help people. 
              now, i can build the tools of tomorrow to impact, improve, and help the lives of as many people as i can.
           </p>
