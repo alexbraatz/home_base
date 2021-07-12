@@ -10,7 +10,6 @@ import Layout, { siteTitle } from '../components/layout'
 import ustilStyles from '../styles/utils.module.css'
 import Date from '../components/date'
 
-import { Anchor } from 'nextjs-anchor'
 import { Frame, Scroll } from 'framer-motion'
 
 
@@ -40,7 +39,9 @@ export default function Home() {
 
       <Navbar />
       <Base />
-      <Who />
+      <div id="who">
+        <Who />
+      </div>
 
       {/* <div className="flex flex-col">  */}
       
