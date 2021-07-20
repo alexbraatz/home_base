@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.2",
     "classnames": "^2.2.6",
     "css-what": "^5.0.1",
     "date-fns": "^2.21.3",
