@@ -14,6 +14,9 @@ export const Contact = () => {
       const map = new mapboxgl.Map({
         container: "my-map",
         style: "mapbox://styles/mapbox/streets-v11",
+        center: [-93.258133, 44.986656],
+        zoom: 10.5,
+        pitch: 45,
       });
 
       map.addControl(
