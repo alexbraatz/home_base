@@ -5,6 +5,7 @@ import { Navbar } from '../components/Navbar.js'
 import { Base } from '../components/Base.js'
 import { Who } from '../components/Who.js'
 import { Work } from '../components/Work.js'
+import { Contact } from '../components/Contact.js'
 import { Example } from '../components/Example.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
@@ -40,11 +41,17 @@ export default function Home() {
 
       <Navbar />
       <Base />
+
       <div id="who">
         <Who />
       </div>
+
       <div id="work">
         <Work />
+      </div>
+
+      <div id="contact">
+        <Contact />
       </div>
 
       {/* <div className="flex flex-col">  */}
