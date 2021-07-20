@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Script from 'next/experimental-script'
 
 export const Contact = () => {
@@ -13,10 +14,15 @@ export const Contact = () => {
         contact
       </h2>
 
-        <i className="fas fa-thumbs-up fa-5x"></i>
-        <i class="fab fa-linkedin fa-5x"></i>
-        <i class="fab fa-github fa-5x"></i>
-      
+      <div className="fa-6x">
+        <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-solid fa-linkedin fa-beat"></i>
+        </a>
+
+        <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github fa-flip"></i>
+        </a>
+      </div>
 
     </section>
   )
