@@ -1,11 +1,28 @@
-import Link from 'next/link'
 import Script from 'next/experimental-script'
+import Head from 'next/head'
+import { useState, useEffect } from 'react'
+const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
 export const Contact = () => {
+  const [ pageIsMounted, setPageIsMounted ] = useState(false);
+  const [ Map, setMap ] = useState();
+
+  mapboxgl.accessToken = "pk.eyJ1IjoiYWxleHhicmFhdHoiLCJhIjoiY2tyY2lnemQxNTNicDJucnU4aGF0NjIzdSJ9.AO8k4xOqjI8a2v1eUmWRKQ"
+
+  useEffect(() => {
+    setPageIsMounted(true)
+      const map = new mapboxgl.Map({
+        container: "my-map",
+        style: "mapbox://styles/mapbox/streets-v11",
+      });
+  }, [])
 
   return (
+
     <section className="pt-24 w-full h-screen bg-gradient-to-r from-pink-600 to-purple-500">
-      
+      <Head>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+      </Head>
       <>
         <Script src="https://kit.fontawesome.com/d15b84a4d3.js" crossorigin="anonymous"></Script>
       </>
@@ -14,13 +31,18 @@ export const Contact = () => {
         contact
       </h2>
 
+      <div id='my-map' style={{ height: 500, width: 500 }}>
+
+      </div>
+
       <div className="fa-6x">
+        {/* target attr opens a new tab and rel attr prevents a phishing type known as tabnabbing */}
         <a href="https://www.linkedin.com/in/alexjbraatz/" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-solid fa-linkedin fa-beat"></i>
+          <i className="fab fa-solid fa-linkedin"></i>
         </a>
 
         <a href="https://github.com/alexbraatz" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github fa-flip"></i>
+          <i className="fab fa-github"></i>
         </a>
       </div>
 

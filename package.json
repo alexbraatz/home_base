@@ -15,10 +15,12 @@
     "framer-motion": "^4.1.17",
     "gasp": "^0.0.2",
     "gray-matter": "^4.0.3",
+    "mapbox-gl": "^2.3.1",
     "next": "^10.0.0",
     "nextjs-anchor": "^0.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-mapbox-gl": "^5.1.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
   },
