@@ -15,6 +15,15 @@ export const Contact = () => {
         container: "my-map",
         style: "mapbox://styles/mapbox/streets-v11",
       });
+
+      map.addControl(
+        new mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true,
+          },
+          trackUserLocation: true,
+        })
+      );
   }, [])
 
   return (
