@@ -6,6 +6,7 @@ import { Base } from '../components/Base.js'
 import { Who } from '../components/Who.js'
 import { Work } from '../components/Work.js'
 import { Contact } from '../components/Contact.js'
+import { Footer } from '../components/Footer.js'
 import { Example } from '../components/Example.js'
 import { Refresh } from '../components/Refresh.js'
 import Layout, { siteTitle } from '../components/layout'
@@ -35,7 +36,7 @@ export default function Home() {
 
   return ( 
     <main className="max-h-screen w-full bg-gradient-to-r from-pink-600 to-purple-500">
-     <Head> 
+      <Head> 
         <title>{siteTitle}</title>
       </Head>
 
@@ -53,6 +54,8 @@ export default function Home() {
       <div id="contact">
         <Contact />
       </div>
+
+      <Footer />
 
       {/* <div className="flex flex-col">  */}
       
