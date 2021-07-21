@@ -37,12 +37,31 @@ export const Work = () => {
 
       <section className="grid grid-flow-row auto-rows-max flex flex-wrap items-center justify-center py-10">
         <section className="bg-white w-1/2 space-y-3 px-6 py-4 rounded-3xl shadow-lg border flex flex-col">
+
           <div className="shadow-2xl relative">
-            <div className="mySlides ">
-              <div className="image1"></div>
+
+            <div className="mySlides hidden">
+              <div className="image1 w-full object-cover"></div>
+            </div>
+
+            <div className="mySlides hidden">
+              <div className="image2 w-full object-cover"></div>
+            </div>
+
+            <div className="mySlides hidden">
+              <div className="image3 w-full object-cover"></div>
+            </div>
+
+            <div className="mySlides hidden">
+              <div className="image4 w-full object-cover"></div>
+            </div>
+
+            <div className="mySlides hidden">
+              <div className="image5 w-full object-cover"></div>
             </div>
 
           </div>
+
           <img src="https://tailwindui.com/img/components/home-screens.02-card-layout-with-sidebar-xl.png"
             className="w-full h-32 object-cover rounded-xl hover:filter hover:brightnexx-75 transition"/>
           
