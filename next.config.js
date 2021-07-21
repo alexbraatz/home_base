@@ -3,7 +3,8 @@
 // 2. create an next.config.js file in root for advanced next.js customization
 // 3. add the webpack config below
 
-module.exports = {
+const withImages = require('next-images')
+module.exports = withImages({
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -12,4 +13,4 @@ module.exports = {
 
     return config;
   }
-};
+});
