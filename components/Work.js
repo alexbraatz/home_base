@@ -1,8 +1,19 @@
-import Image from 'next/image'
-import { url } from 'vfile-message'
-// import imageOne from '../public/images/cool.png'
+import React, { useEffect } from 'react'
+import { useEmblaCarousel } from 'embla-carousel/react'
 
 export const Work = () => {
+
+  const handleClick = (e) => {
+    console.log('In handle click!');
+  }
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({loop: true})
+
+  useEffect(()=>{
+    if ( emblaApi ){
+
+    }
+  }, [emblaApi])
 
   return (
     <>
@@ -37,10 +48,19 @@ export const Work = () => {
 
       <section className="grid grid-flow-row auto-rows-max flex flex-wrap items-center justify-center py-10">
         <section className="bg-white w-1/2 space-y-3 px-6 py-4 rounded-3xl shadow-lg border flex flex-col">
+          {/* Begin slideshow section*/}
+          <div className="embla" ref={emblaRef}>
+            <div className="embla__container">
+              <div className="embla__slide">Slide 1</div>
+              <div className="embla__slide">Slide 2</div>
+              <div className="embla__slide">Slide 3</div>
+            </div>
+          </div>
 
+          {/* Large image on slides */}
           <div className="shadow-2xl relative">
 
-            <div className="mySlides hidden">
+            {/* <div className="mySlides hidden">
               <div className="image1 w-full object-cover"></div>
             </div>
 
@@ -58,7 +78,34 @@ export const Work = () => {
 
             <div className="mySlides hidden">
               <div className="image5 w-full object-cover"></div>
-            </div>
+            </div> */}
+
+            {/* Slideshow arrows */}
+            {/* <a className="absolute left-0 inset-y-0 flex items-center -mt-32 px-4 text-white hover:text-gray-800 cursor-pointer text-3xl font-extrabold" onClick={handleClick}>❮</a>
+            <a className="absolute right-0 inset-y-0 flex items-center -mt-32 px-4 text-white hover:text-gray-800 cursor-pointer text-3xl font-extrabold" onClick={handleClick}>❯</a> */}
+
+            {/* Image Description */}
+            {/* <div className="text-center text-white font-light tracking-wider bg-gray-800 py-2">
+              <p id="caption"></p>
+            </div> */}
+
+            {/* <div className="flex">
+              <div>
+                <img className="image1 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onClick={handleClick} alt="Dog's Nose"/>
+              </div>
+              <div>
+                <img className="image2 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onClick={handleClick} alt="Lawnmower"/>
+              </div>
+              <div>
+                <img className="image3 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onClick={handleClick} alt="Globe"/>
+              </div>
+              <div>
+                <img className="image4 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onClick={handleClick} alt="Optical Illusion"/>
+              </div>
+              <div>
+                <img className="image5 description h-24 opacity-50 hover:opacity-100 cursor-pointer" src="#" onClick={handleClick} alt="Lips"/>
+              </div>
+            </div> */}
 
           </div>
 
