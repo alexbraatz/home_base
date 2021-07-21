@@ -3,12 +3,13 @@ import Link from 'next/link'
 export const Work = () => {
 
   return (
+ 
     <section className="pt-24 w-full h-screen bg-gradient-to-r from-pink-600 to-purple-500">
       <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
         projects i've worked on
       </h2>
 
-      <section className="flex flex-nowrap items-center justify-center py-10">
+      <section className="grid grid-flow-row auto-rows-max flex flex-wrap items-center justify-center py-10">
         <section className="bg-white w-1/2 space-y-3 px-6 py-4 rounded-3xl shadow-lg border flex flex-col">
           <img src="https://tailwindui.com/img/components/home-screens.02-card-layout-with-sidebar-xl.png"
             className="w-full h-32 object-cover rounded-xl hover:filter hover:brightnexx-75 transition"/>
@@ -45,6 +46,7 @@ export const Work = () => {
       </section>
 
     </section>
+    
   )
 
 }
