@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import { useEmblaCarousel } from 'embla-carousel/react'
+import Image from 'next/image'
+
+// import ProfilePic from '../public/images/profile.png'
 
 export const Work = () => {
 
@@ -14,6 +17,7 @@ export const Work = () => {
 
     }
   }, [emblaApi])
+
 
   return (
     <>
@@ -45,6 +49,12 @@ export const Work = () => {
       <h2 className="pl-7 font-sans font-extrabold text-4xl md:text-7xl ubpixel-antialiased text-black">
         projects i've worked on
       </h2>
+      {/* <img
+        src={require("../public/images/profile.png")}
+        alt="pic of author"
+        width={100}
+        height={100}
+      /> */}
 
       <section className="grid grid-flow-row auto-rows-max flex flex-wrap items-center justify-center py-10">
         <section className="bg-white w-1/2 space-y-3 px-6 py-4 rounded-3xl shadow-lg border flex flex-col">
